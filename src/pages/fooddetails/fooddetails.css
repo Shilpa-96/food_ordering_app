@@ -1,0 +1,120 @@
+.fooddetails_banner{
+    width: 80vw;
+    height:200px;
+}
+.banner-heading-title{
+    width: 50%;
+    color: white;
+    position: relative;
+    top: -8rem;
+    left: 8rem;
+    font-size: 40px !important;
+}
+.food-details-container{
+    /* border: 2px solid red; */
+    margin-bottom: 9rem;
+}
+.food-details-container .col-1{
+    display: flex;
+    padding: 40px;
+    /* border: 2px solid yellow; */
+}
+.food-details-container .images {
+    display: flex;
+    /* border: 2px solid red; */
+}
+.food-details-container .all-images{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-right: 40px;
+}
+.food-details-container .all-images img{
+    height: 60px;
+    width: 60px;
+}
+.food-details-container .main-image img{
+    height: 300px;
+    width: 350px;
+    margin-right: 50px;  
+}
+.food-details-container .product-about{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* border: 2px solid red; */
+}
+.food-details-container .product-about h4{
+    font-size: 50px !important;
+}
+.food-details-container .price{
+    color: red;
+}
+.food-details-container .category{
+    padding: 2px 5px;
+    border: 1px solid rgb(245, 209, 209);
+    background-color: rgb(245, 209, 209);
+}
+.food-details-container button {
+    background-color: red;
+    width: 100px;
+    color: white;
+    font-size: 13px;
+    padding: 5px 2px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.food-details-container .desc-title{
+    color:red;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+}
+.related-product-conatiner .title{
+    margin: 0 40px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+@media only screen and (max-width:950px) {
+    .food-details-container .col-1 {
+            display: flex;
+            padding: 40px;
+            flex-direction: column;
+            /* border: 2px solid red; */
+        }
+    .food-details-container .product-about h4 {
+        font-size: 25px !important;
+    }
+    .food-details-container .main-image img {
+        height: 300px;
+        width: 350px;
+        margin-right: 50px;
+    }
+        .food-details-container .images {
+            align-self: center;
+            /* border: 2px solid red; */
+        }
+}
+
+@media only screen and (max-width:600px) {
+
+    .food-details-container .main-image img {
+        height: 150px;
+        width: 200px;
+        margin-right: 50px;
+    }
+
+    .food-details-container .images {
+        flex-direction: column-reverse;
+        align-self: center;
+        /* border: 2px solid red; */
+    }
+        .food-details-container .all-images {
+            flex-direction: row;
+            margin: 10px 0;
+        }
+}
+
+
